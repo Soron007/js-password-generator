@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    border: 2px solid brown;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 9px #000;
+    background-color: #139dbf78;
+    border-radius: 25px;
+}
+
+.app-heading{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.app-heading:hover{
+    text-shadow:0px 10px 5px rgb(188, 16, 44);
+}
+
+.box2{
+    width: 400px;
+    max-width: 90%;
+    height: 50px;
+    background-color: rgba(165, 42, 42, 0.323);
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+    
+}
+
+i{
+    position: relative;
+    bottom: 34px;
+    left: 160px;
+    cursor: pointer;
+    color: #cae941;
+    transition: all 0.3s ease;
+    height: 2rem;
+    
+    
+}
+
+
+i:hover{
+    transform: scaleY(1.1);
+}
+
+@media screen and (max-width: 410px) {
+    i{
+        
+        left: 145px;
+    }
+}
+
+@media screen and (max-width: 363px) {
+    i{
+        
+        left: 115px;
+    }
+}
+
+.specifics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.length{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #020202f0;
+    box-shadow: 1px 2px 1px rgba(232, 240, 128, 0.875);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.length input{
+    width: 20%;
+    height: 30px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.generate{
+    width: 20%;
+    min-width: 30%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgba(255, 0, 0, 0.501);
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.generate:hover{
+    background-color: rgba(172, 255, 47, 0.557);
+    transform: scaleY(1.1);
+}
